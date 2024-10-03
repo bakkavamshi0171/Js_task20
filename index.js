@@ -1,3 +1,4 @@
+// call method
 function introduce(greeting, location){
     console.log(greeting + " this is " + this.name + " i am from " + location );
 
@@ -7,6 +8,7 @@ let person1= {
 }
 introduce.call(person1, "Hello", "Hyderabad");
 
+// apply method
 function introduce(greeting, location){
     console.log(greeting + " this is " + this.name + " i am from " + location );
 }
@@ -16,7 +18,7 @@ let person2= {
 introduce.apply(person2, ["Hello", "Hyderabad"]);
 
 
-
+// bind method
 function introduce(greeting, location){
     console.log(greeting + " this is " + this.name + " i am from " + location );
 
